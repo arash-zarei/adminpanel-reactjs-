@@ -1,0 +1,45 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header .notification_cart_messages{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.notification_cart_messages span{
+    display: none;
+}
+
+.header .notification_cart_messages svg{
+    cursor: pointer;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user p{
+    color: #a19f9f;
+}
+.user p span{
+    color: #000;
+}
+
+@media only screen and (max-width: 576px) {
+    .notification_cart_messages span{
+        display: block;
+    }
+}

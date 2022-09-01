@@ -1,0 +1,28 @@
+.App{
+    width: 100%;
+    background-color: #eeebeb;
+}
+
+.content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+@media only screen and (max-width: 992px) {
+    .content{
+        grid-template-columns: 25% 75%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content{
+        grid-template-columns: 15% 85%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .content{
+        grid-template-columns: 100%;
+    }
+}

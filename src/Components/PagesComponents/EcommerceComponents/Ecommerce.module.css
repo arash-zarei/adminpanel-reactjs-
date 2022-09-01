@@ -1,0 +1,62 @@
+.ecommerce{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+.statistics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.charts{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.pie_bar{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.line_bar{
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .statistics{
+        padding: 20px;
+    }
+
+    .charts{
+        flex-direction: column;
+        align-items: center;
+        padding-right: 50px;
+    }
+
+    .pie_bar{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .line_bar{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 576px){
+    .charts{
+        padding-right: 0;
+        padding: 50px;
+    }
+}

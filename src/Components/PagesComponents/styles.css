@@ -1,0 +1,65 @@
+.orders{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.title p{
+    font-size: 14px;
+    color: #aaa7a7;
+}
+
+.items{
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid silver;
+    position: relative;
+    border-radius: 5px;
+}
+
+.items .titles{
+    width: 100%;
+    padding: 10px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+}
+
+.titles p{
+    color: #696969;
+    font-size: 15px;
+}
+
+.pagesNumber{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    cursor: pointer;
+    text-align: center;
+}
+
+.orderItems{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .orders{
+        padding: 30px;
+        overflow-x: auto;
+    }
+
+    .title, .items{
+        width: 900px;
+    }
+}

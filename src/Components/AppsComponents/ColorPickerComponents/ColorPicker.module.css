@@ -1,0 +1,19 @@
+.colorpicker{
+    /* padding-top: 20px; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; */
+    padding: 20px;
+    text-align: center;
+}
+
+.colorpicker > div{
+    margin: 50px auto;
+}
+
+@media only screen and (max-width: 992px) {
+    .colorpicker > div{
+        width: 90%;
+    }
+}

@@ -1,0 +1,105 @@
+.content{
+    width: 100%;
+    padding-top: 20px;
+    padding: 0 10px 30px 10px;
+    z-index: 2;
+    height: 100vh;
+}
+
+.titleDashboard span{
+    display: none;
+}
+
+.routes{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.routes h5{
+    color: #a19c9c;
+    margin-bottom: 15px;
+}
+
+.route{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 7px 10px; 
+    margin-top: 20px;
+    color: #000;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+
+.route:hover{
+    background-color: #d6d5d5;
+}
+
+@media only screen and (max-width: 768px) {
+    .title{
+        display: none;
+    }
+
+    .routes a{
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .content{
+        width: 50%;
+        overflow-x: auto;
+        position: fixed;
+        top: 0;
+        left: -60%;
+        background-color: #ebe8e8;
+        box-shadow: 0 0 35px 5px #c0c0c0;
+        transition: all .4s ease;
+    }
+
+    .titleDashboard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        margin-top: 10px;
+    }
+
+    .titleDashboard span{
+        display: block;
+        cursor: pointer;
+    }
+
+    .open{
+        left: 0;
+    }
+
+    .title{
+        display: block;
+    }
+
+    .routes a{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content{
+        width: 60%;
+        left: -70%;
+    }
+    .open{
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .content{
+        width: 80%;
+        left: -90%;
+    }
+    .open{
+        left: 0;
+    }
+}
